@@ -1,0 +1,236 @@
+# Loading project MicroCPU
+vsim work.MCPU_Alutba
+# vsim work.MCPU_Alutba 
+# Loading work.MCPU_Alutba
+# Loading work.MCPU_Alu
+add wave sim:/MCPU_Alutba/*
+run
+# @5ps default is selected, opcode xx
+vsim work.MCPU_RAMController
+# vsim work.MCPU_RAMController 
+# Loading work.MCPU_RAMController
+# WARNING: No extended dataflow license exists
+add wave sim:/MCPU_RAMController/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.MCPU_RAMControllertbb
+# vsim work.MCPU_RAMControllertbb 
+# Loading work.MCPU_RAMControllertbb
+# Loading work.MCPU_RAMController
+# WARNING: No extended dataflow license exists
+add wave sim:/MCPU_RAMControllertbb/*
+run
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.MCPU_Registerfile_tb
+# vsim work.MCPU_Registerfile_tb 
+# Loading work.MCPU_Registerfile_tb
+# Loading work.MCPU_Registerfile
+# Loading work.MCPU_Alu
+# Loading work.MCPU_RAMController
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (4 or 4) does not match connection size (2) for port 'cmd'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (16 or 16) does not match connection size (8) for port 'in1'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (16 or 16) does not match connection size (8) for port 'in2'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (16 or 16) does not match connection size (8) for port 'out'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# WARNING: No extended dataflow license exists
+add wave sim:/MCPU_Registerfile_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.MCPU_Registerfile_tb
+# vsim work.MCPU_Registerfile_tb 
+# Loading work.MCPU_Registerfile_tb
+# Loading work.MCPU_Registerfile
+# Loading work.MCPU_Alu
+# Loading work.MCPU_RAMController
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (4 or 4) does not match connection size (2) for port 'cmd'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (16 or 16) does not match connection size (8) for port 'in1'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (16 or 16) does not match connection size (8) for port 'in2'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# ** Warning: (vsim-3015) /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v(41): [PCDPC] - Port size (16 or 16) does not match connection size (8) for port 'out'. The port definition is at: /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v(1).
+#         Region: /MCPU_Registerfile_tb/alu
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/MCPU_Registerfile_tb/regfile/R
+add wave sim:/MCPU_Registerfile_tb/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.MCPUtb
+# vsim work.MCPUtb 
+# Loading work.MCPUtb
+# Loading work.MCPU
+# Loading work.MCPU_Alu
+# Loading work.MCPU_Registerfile
+# Loading work.MCPU_RAMController
+# WARNING: No extended dataflow license exists
+add wave sim:/MCPUtb/*
+do /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do
+run
+run
+run
+run
+run
+run
+run
+add wave -position 15  -format Default -height 16 -label MCPUtb -max 0 -min 0
+# Missing signal name or pattern.
+run
+run
+run
+run
+# Compile of ramcontroller.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of alu.v was successful.
+# Compile of alutb.v was successful.
+# Compile of cpu.v was successful.
+# Compile of cputb.v was successful.
+# Compile of alutba.v was successful.
+# Compile of ramcontrollertb.v was successful.
+# Compile of ramcontrollertbb.v was successful.
+# Compile of registerfile_tb.v was successful.
+# Compile of alu16.v was successful.
+# Compile of alu8.v was successful.
+# Compile of cputbb.v was successful.
+# 13 compiles, 0 failed with no errors. 
+# Load canceled
+# Compile of ramcontroller.v was successful.
+# Compile of registerfile.v was successful.
+# Compile of alu.v was successful.
+# Compile of alutb.v was successful.
+# Compile of cpu.v was successful.
+# Compile of cputb.v was successful.
+# Compile of alutba.v was successful.
+# Compile of ramcontrollertb.v was successful.
+# Compile of ramcontrollertbb.v was successful.
+# Compile of registerfile_tb.v was successful.
+# Compile of alu16.v was successful.
+# Compile of alu8.v was successful.
+# Compile of cputbb.v was successful.
+# 13 compiles, 0 failed with no errors. 
+vsim work.MCPUtbb
+# vsim work.MCPUtbb 
+# Loading work.MCPUtbb
+# Loading work.MCPU
+# Loading work.MCPU_Alu
+# Loading work.MCPU_Registerfile
+# Loading work.MCPU_RAMController
+# WARNING: No extended dataflow license exists
+do /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/STATE_AS_STR'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/pc'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/opcode'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/operand1'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/operand2'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/operand3'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/regset_cmd'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/regset_wb'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/regdatatoload'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/RegOp1'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/regfileinst/R'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/raminst/mem'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/MCPUtb/cpuinst/raminst/mem[20]'.
+# Executing ONERROR command at macro /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/wave.do line 15
+# Closing project /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/MicroCPU.mpf
+# reading /home/usual/altera/modelsim_ase/linux/../modelsim.ini
+# Loading project project1
+vsim work.exampleltb
+# vsim work.exampleltb 
+# Loading work.exampleltb
+# Loading work.example1
+add wave sim:/exampleltb/*
+add wave sim:/exampleltb/*
+run

@@ -1,0 +1,92 @@
+/home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/cputbb.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/cputbb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPUtbb
+
+Top level modules:
+	MCPUtbb
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/cpu.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/cpu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU
+
+Top level modules:
+	MCPU
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alutb.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alutb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Alutb
+
+Top level modules:
+	MCPU_Alutb
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/alu16.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/alu16.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Alu16
+
+Top level modules:
+	MCPU_Alu16
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/ramcontrollertb.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/ramcontrollertb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_RAMControllertb
+
+Top level modules:
+	MCPU_RAMControllertb
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/ramcontroller.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/ramcontroller.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_RAMController
+
+Top level modules:
+	MCPU_RAMController
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/ramcontrollertbb.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/ramcontrollertbb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_RAMControllertbb
+
+Top level modules:
+	MCPU_RAMControllertbb
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/registerfile.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/registerfile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Registerfile
+
+Top level modules:
+	MCPU_Registerfile
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/cputb.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/cputb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPUtb
+
+Top level modules:
+	MCPUtb
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/alutba.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/alutba.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Alutba
+
+Top level modules:
+	MCPU_Alutba
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/microcpu-rtl/alu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Alu
+
+Top level modules:
+	MCPU_Alu
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/alu8.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/alu8.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Alu8
+
+Top level modules:
+	MCPU_Alu8
+
+} {} {}} /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v {1 {vlog -work work /home/usual/Desktop/MICROPROCESSORS/homework/homework4/MicroCPU/registerfile_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MCPU_Registerfile_tb
+
+Top level modules:
+	MCPU_Registerfile_tb
+
+} {} {}}

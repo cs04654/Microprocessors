@@ -1,0 +1,160 @@
+module MCPU_RAMControllertb;
+
+  // Parameters
+  parameter WORD_SIZE = 8;
+  parameter ADDR_WIDTH = 8;
+  parameter RAM_SIZE = 1 << ADDR_WIDTH;
+
+  // Signals
+  reg we, re;
+  reg [WORD_SIZE-1:0] datawr;
+  reg [ADDR_WIDTH-1:0] addr, instraddr;
+
+  wire [WORD_SIZE-1:0] datard, instrrd;
+
+  // Instantiate RAM Controller
+  MCPU_RAMController dut (
+    .we(we),
+    .datawr(datawr),
+    .re(re),
+    .addr(addr),
+    .datard(datard),
+    .instraddr(instraddr),
+    .instrrd(instrrd)
+  );
+
+  // Local memory copy for comparison
+  reg [WORD_SIZE-1:0] mem_copy[RAM_SIZE-1:0];
+  
+      
+  integer addr_counter; // Declare a counter for address increment
+
+
+  
+  // Testbench behavior
+  initial begin
+    // Initialize random seed
+    $randomize;
+
+    // Data writing to fill memory and create local copy
+    // Fill memory with random words
+    // Store the random words in the local copy of the memory
+    we = 1; // Enable write operation
+    re = 0; // Disable read operation initially
+    
+    
+    for (addr_counter = 0; addr_counter < RAM_SIZE; addr_counter = addr_counter + 1) begin
+      addr = addr_counter; // Increment address by 1 in each iteration
+      datawr = $random % (1 << WORD_SIZE); // Generate random data
+      mem_copy[addr] = datawr; // Store data in local memory copy
+      #1; // Hold values for 1 time unit
+    end
+
+    // Data read and comparison with local memory copy
+    // Perform data read and compare with local memory copy
+    re = 1; // Enable read operation
+    we = 0; // Disable write operation
+
+
+    for (addr_counter = 0; addr_counter < RAM_SIZE; addr_counter = addr_counter + 1) begin
+      addr = addr_counter; 
+      instraddr = addr_counter; 
+      #1; // Hold values for 1 time unit
+
+      if (datard !== mem_copy[addr]) begin
+        $display("Data read mismatch at address %d", addr);
+        $stop;
+      end
+
+      if (instrrd !== mem_copy[instraddr]) begin
+        $display("Data read mismatch at address %d", instraddr);
+        $stop;
+      end
+    end
+end
+
+endmodule
+
+
+
+/*module MCPU_RAMControllertb();
+
+parameter WORD_SIZE = 8;
+parameter ADDR_WIDTH = 8;
+parameter RAM_SIZE = 1 << ADDR_WIDTH;
+
+reg we, re;
+reg [WORD_SIZE-1:0] datawr;
+reg [ADDR_WIDTH-1:0] addr, instraddr;
+wire [WORD_SIZE-1:0] datard, instrrd;
+
+// Instantiate the RAM controller module
+MCPU_RAMController #(
+    .WORD_SIZE(WORD_SIZE),
+    .ADDR_WIDTH(ADDR_WIDTH),
+    .RAM_SIZE(RAM_SIZE)
+) ram_controller (
+    .we(we),
+    .datawr(datawr),
+    .re(re),
+    .addr(addr),
+    .datard(datard),
+    .instraddr(instraddr),
+    .instrrd(instrrd)
+);
+
+// Local copy of memory to store data written
+reg [WORD_SIZE-1:0] mem_copy [RAM_SIZE-1:0];
+
+// Testbench code
+initial begin
+    // Initialize signals
+    we = 1'b0;
+    re = 1'b0;
+    addr = 0;
+    instraddr = 0;
+
+    // Write random data to memory and store in local copy
+    // Perform data writing and store data in the local memory copy
+    repeat (RAM_SIZE) begin
+        datawr = $random; // Generate random data
+        we = 1'b1; // Enable write
+        mem_copy[addr] = datawr; // Store in local memory copy
+        addr = addr + 1; // Increment address for the next write
+        #1; // Delay for proper simulation
+        we = 1'b0; // Disable write
+    end
+
+    // Perform data and instruction reading and compare with local memory copy
+    #10; // Wait for a few simulation cycles before reading
+
+    // Data read and comparison
+    addr = 0;
+    repeat (RAM_SIZE) begin
+        re = 1'b1; // Enable read
+        #1; // Delay for proper simulation
+        if (mem_copy[addr] !== datard) begin
+            $display("Data mismatch at address %d", addr);
+        end
+        addr = addr + 1; // Increment address for the next read
+        re = 1'b0; // Disable read
+    end
+
+    // Instruction read and comparison
+    instraddr = 0;
+    repeat (RAM_SIZE) begin
+        #1; // Delay for proper simulation
+        if (mem_copy[instraddr] !== instrrd) begin
+           $display("Instruction mismatch at address %d", instraddr);
+        end
+        instraddr = instraddr + 1; // Increment address for the next instruction read
+    end
+
+    // End simulation
+    $finish;
+end
+
+endmodule
+
+
+*/
